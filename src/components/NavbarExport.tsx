@@ -101,7 +101,7 @@ export function NavbarExport() {
 							</div>
 
 							<div className="hidden pr-2 md:block">
-								<Link href="/docs/installation">
+								<Link href="/docs">
 									<motion.div
 										className={`flex cursor-pointer items-center rounded-3xl bg-[#fafafa] px-5 py-2 text-sm ${OutfitMedium.className} text-[#000000] transition-transform active:scale-95`}
 										onMouseEnter={() => setIsButtonHovered(true)}
@@ -210,7 +210,7 @@ export function NavbarExport() {
 											className="mt-4"
 										>
 											<Link
-												href="/docs/installation"
+												href="/docs"
 												onClick={() => setIsMobileMenuOpen(false)}
 												className={`flex w-full items-center justify-center gap-3 rounded-xl bg-[#fafafa] py-2.5 text-base text-[#000000] ${OutfitMedium.className}`}
 											>
