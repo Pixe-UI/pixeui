@@ -214,7 +214,9 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
 			>
 				<LoadingProvider>
 					<NavbarExport />
+
 					<main>{children}</main>
+
 					<FooterExport />
 				</LoadingProvider>
 			</body>

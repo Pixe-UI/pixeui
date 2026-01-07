@@ -8,6 +8,13 @@ import { ExternalLink } from "@deemlol/next-icons";
 import Image from "next/image";
 import Link from "next/link";
 
+type FooterLink = {
+	name: string;
+	href: string;
+	badge?: string;
+	external?: boolean;
+};
+
 export function FooterExport() {
 	const currentYear = new Date().getFullYear();
 	const { isLoading } = useLoading();
@@ -39,39 +46,43 @@ export function FooterExport() {
 							<h3 className={`text-start text-base text-[#fafafa] ${OutfitMedium.className}`}>{section?.title}</h3>
 
 							<ul className="flex flex-col gap-2">
-								{section?.links?.map((link) => (
-									<li key={link?.name}>
-										{(link as any).badge ? (
-											<div
-												className={`flex w-fit cursor-not-allowed items-center gap-2 text-sm text-[#fafafa]/40 ${OutfitRegular.className}`}
-											>
-												<span>{link?.name}</span>
+								{section?.links?.map((item) => {
+									const link = item as FooterLink;
 
-												<span
-													className={`rounded-full bg-[#fafafa]/10 px-2 py-0.5 text-[10px] ${OutfitRegular.className} text-[#fafafa]/70`}
+									return (
+										<li key={link?.name}>
+											{link?.badge ? (
+												<div
+													className={`flex w-fit cursor-not-allowed items-center gap-2 text-sm text-[#fafafa]/40 ${OutfitRegular.className}`}
 												>
-													{(link as any).badge}
-												</span>
-											</div>
-										) : (
-											<Link
-												href={link?.href}
-												target={(link as any).external ? "_blank" : undefined}
-												rel={(link as any).external ? "noopener noreferrer" : undefined}
-												className={`group flex w-fit items-center gap-2 text-sm text-[#fafafa]/70 transition-colors duration-300 hover:text-[#fafafa] ${OutfitRegular.className}`}
-											>
-												<span>{link?.name}</span>
+													<span>{link?.name}</span>
 
-												{(link as any).external && (
-													<ExternalLink
-														size={14}
-														className="opacity-0 transition-opacity duration-300 group-hover:opacity-100"
-													/>
-												)}
-											</Link>
-										)}
-									</li>
-								))}
+													<span
+														className={`rounded-full bg-[#fafafa]/10 px-2 py-0.5 text-[10px] ${OutfitRegular.className} text-[#fafafa]/70`}
+													>
+														{link?.badge}
+													</span>
+												</div>
+											) : (
+												<Link
+													href={link?.href}
+													target={link?.external ? "_blank" : undefined}
+													rel={link?.external ? "noopener noreferrer" : undefined}
+													className={`group flex w-fit items-center gap-2 text-sm text-[#fafafa]/70 transition-colors duration-300 hover:text-[#fafafa] ${OutfitRegular.className}`}
+												>
+													<span>{link?.name}</span>
+
+													{link?.external && (
+														<ExternalLink
+															size={14}
+															className="opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+														/>
+													)}
+												</Link>
+											)}
+										</li>
+									);
+								})}
 							</ul>
 						</div>
 					))}

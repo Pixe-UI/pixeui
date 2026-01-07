@@ -7,6 +7,27 @@ export const NAVBAR_LINKS = [
 	{ name: "GitHub", href: "https://github.com/Pixe-UI" },
 ] as const;
 
+export const SIDEBAR_SECTIONS = [
+	{
+		title: "Product",
+		icon: "Layout",
+		items: [
+			{ name: "Introduction", href: "/docs" },
+			{ name: "Installation", href: "/docs/installation" },
+			{ name: "Changelog", href: "/docs/changelog" },
+		],
+	},
+	{
+		title: "Menu",
+		icon: "Grid",
+		items: [
+			{ name: "Components", href: "/docs/components" },
+			{ name: "Templates", href: "#", badge: "Soon" },
+			{ name: "Icons", href: "https://www.nexticons.com", external: true },
+		],
+	},
+] as const;
+
 export const FOOTER_LINKS = [
 	{
 		title: "Product",

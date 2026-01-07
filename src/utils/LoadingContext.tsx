@@ -1,6 +1,6 @@
 "use client";
 
-import React, { ReactNode } from "react";
+import React from "react";
 
 type LoadingContextType = {
 	isLoading: boolean;
@@ -9,7 +9,7 @@ type LoadingContextType = {
 
 const LoadingContext = React.createContext<LoadingContextType | undefined>(undefined);
 
-export function LoadingProvider({ children }: { children: ReactNode }) {
+export function LoadingProvider({ children }: { children: React.ReactNode }) {
 	const [isLoading, setIsLoading] = React.useState(false);
 
 	return <LoadingContext.Provider value={{ isLoading, setIsLoading }}>{children}</LoadingContext.Provider>;

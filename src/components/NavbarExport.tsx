@@ -167,7 +167,7 @@ export function NavbarExport() {
 									animate={{ opacity: 1, height: "auto" }}
 									exit={{ opacity: 0, height: 0 }}
 									transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
-									className="pointer-events-auto absolute top-[calc(100%+6px)] right-0 left-0 w-full overflow-hidden rounded-3xl border border-[#fafafa]/10 bg-[#000000]/30 backdrop-blur-lg md:hidden"
+									className="pointer-events-auto absolute top-[calc(100%+6px)] right-0 left-0 w-full overflow-hidden rounded-3xl border border-[#fafafa]/10 bg-[#000000]/70 backdrop-blur-lg md:hidden"
 								>
 									<div className="flex flex-col gap-1 p-2">
 										{NAVBAR_LINKS.map((link, index) => {
