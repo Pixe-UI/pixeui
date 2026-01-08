@@ -14,7 +14,7 @@ export const SIDEBAR_SECTIONS = [
 		items: [
 			{ name: "Introduction", href: "/docs" },
 			{ name: "Installation", href: "/docs/installation" },
-			{ name: "Changelog", href: "/docs/changelog" },
+			{ name: "Changelog", href: "#", badge: "Soon" },
 		],
 	},
 	{
@@ -25,6 +25,24 @@ export const SIDEBAR_SECTIONS = [
 			{ name: "Templates", href: "#", badge: "Soon" },
 			{ name: "Icons", href: "https://www.nexticons.com", external: true },
 		],
+	},
+] as const;
+
+export const INTRODUCTION_FEATURES = [
+	{
+		title: "Modern Design",
+		description: "Clean, modern, and professional UI components designed to provide the best user experience.",
+		icon: "Sparkles2",
+	},
+	{
+		title: "Copy & Paste",
+		description: "Simply copy the code and paste it into your project. No complex installation or dependencies required.",
+		icon: "Copy",
+	},
+	{
+		title: "Fully Customizable",
+		description: "Built with Tailwind CSS, making it incredibly easy to fully customize and adapt to your brand identity.",
+		icon: "Code",
 	},
 ] as const;
 

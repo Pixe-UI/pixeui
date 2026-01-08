@@ -6,6 +6,7 @@
 	"useTabs": true,
 	"singleQuote": false,
 	"bracketSpacing": true,
+	"trailingComma": "all",
 
 	"plugins": ["prettier-plugin-tailwindcss"]
 }
