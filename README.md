@@ -1,11 +1,3 @@
-<div align="center">
-  <h1>Pixe UI</h1>
-  
-  <p align="center">
-    Collection of modern, accessible, and fully customizable UI components built with React, Tailwind CSS, and Framer Motion.
-  </p>
-</div>
-
 ![Banner](.github/assets/Banner.png)
 
 ## Documentation
@@ -15,6 +7,7 @@ Visit [**PixeUI.com**](https://pixeui.com/docs) to view the documentation.
 ## Code of Conduct
 
 This project follows a Code of Conduct to help create a welcoming community.
+
 Please read [**CODE_OF_CONDUCT.md**](./CODE_OF_CONDUCT.md) before contributing.
 
 ## License
