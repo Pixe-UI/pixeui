@@ -28,6 +28,14 @@ export const SIDEBAR_SECTIONS = [
 	},
 ] as const;
 
+export const COMPONENTS_SIDEBAR_SECTIONS = [
+	{
+		title: "Buttons",
+		icon: "Square",
+		items: [{ name: "Button", href: "/docs/components/buttons/button" }],
+	},
+] as const;
+
 export const INTRODUCTION_FEATURES = [
 	{
 		title: "Modern Design",
@@ -43,6 +51,27 @@ export const INTRODUCTION_FEATURES = [
 		title: "Fully Customizable",
 		description: "Built with Tailwind CSS, making it incredibly easy to fully customize and adapt to your brand identity.",
 		icon: "Code",
+	},
+] as const;
+
+export const COMPONENTS_COLLECTION_LIST = [
+	{
+		title: "Buttons",
+		href: "/docs/components/buttons/button",
+		disabled: false,
+		icon: "PlusSquare",
+	},
+	{
+		title: "Inputs",
+		href: "#",
+		disabled: true,
+		icon: "MoreHorizontal",
+	},
+	{
+		title: "Dialogs",
+		href: "#",
+		disabled: true,
+		icon: "MessageSquare",
 	},
 ] as const;
 

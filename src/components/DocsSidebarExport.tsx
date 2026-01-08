@@ -1,17 +1,18 @@
 "use client";
 
+import { SIDEBAR_SECTIONS, COMPONENTS_SIDEBAR_SECTIONS } from "@/lib/constants";
 import { OutfitMedium, OutfitRegular, OutfitSemiBold } from "@/lib/fonts";
-import { SIDEBAR_SECTIONS } from "@/lib/constants";
 
-import { Grid, Layout, ExternalLink, ChevronRight, ChevronDown, X } from "@deemlol/next-icons";
+import { Grid, Square, Layout, ExternalLink, ChevronRight, ChevronDown, X } from "@deemlol/next-icons";
 import { motion, AnimatePresence } from "framer-motion";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import React from "react";
 
 const ICON_MAP = {
-	Layout: <Layout color="#fafafa" size={18} />,
-	Grid: <Grid color="#fafafa" size={18} />,
+	Layout: <Layout color="#fafafa" size={16} />,
+	Grid: <Grid color="#fafafa" size={16} />,
+	Square: <Square color="#fafafa" size={16} />,
 };
 
 type SidebarItem = {
@@ -27,7 +28,16 @@ type SidebarSection = {
 	items: readonly SidebarItem[];
 };
 
-const SECTIONS = SIDEBAR_SECTIONS as unknown as readonly SidebarSection[];
+const getSections = (pathname: string): readonly SidebarSection[] => {
+	if (pathname.startsWith("/docs/components")) {
+		return [
+			...(SIDEBAR_SECTIONS as unknown as readonly SidebarSection[]),
+			...(COMPONENTS_SIDEBAR_SECTIONS as unknown as readonly SidebarSection[]),
+		];
+	}
+
+	return SIDEBAR_SECTIONS as unknown as readonly SidebarSection[];
+};
 
 export function DocsSidebarExport() {
 	const pathname = usePathname();
@@ -42,6 +52,7 @@ export function DocsSidebarExport() {
 export function MobileDocsNav() {
 	const [isMobileOpen, setMobileIsOpen] = React.useState(false);
 	const pathname = usePathname();
+	const sections = getSections(pathname);
 
 	React.useEffect(() => {
 		setMobileIsOpen(false);
@@ -58,7 +69,7 @@ export function MobileDocsNav() {
 		};
 	}, [isMobileOpen]);
 
-	const currentPageName = SECTIONS.flatMap((s) => s?.items).find((i) => i?.href === pathname)?.name || "Menu";
+	const currentPageName = sections.flatMap((s) => s?.items).find((i) => i?.href === pathname)?.name || "Menu";
 
 	return (
 		<div className="mb-6 flex flex-col lg:hidden">
@@ -120,9 +131,11 @@ export function MobileDocsNav() {
 }
 
 function SidebarContent({ pathname }: { pathname: string }) {
+	const sections = getSections(pathname);
+
 	return (
-		<div className="flex flex-col gap-10">
-			{SECTIONS.map((section) => (
+		<div className="flex flex-col gap-6">
+			{sections.map((section) => (
 				<div key={section?.title} className="flex flex-col gap-3">
 					<div className="flex items-center gap-2 px-2">
 						<div className="grid h-6 w-6 place-items-center">{ICON_MAP[section.icon]}</div>
@@ -181,10 +194,6 @@ function SidebarContent({ pathname }: { pathname: string }) {
 											className="absolute left-[19px] h-8 w-[2px] rounded-full bg-[#fafafa] shadow-[0_0_10px_2px_rgba(255,255,255,0.3)]"
 											transition={{ duration: 0.2, type: "spring", stiffness: 300, damping: 30 }}
 										/>
-									)}
-
-									{!isActive && !isExternal && (
-										<div className="absolute left-[19px] h-1.5 w-1.5 rounded-full bg-[#fafafa] opacity-0 transition-opacity duration-300 group-hover:opacity-50" />
 									)}
 
 									<span className="relative z-10 flex items-center gap-2">
