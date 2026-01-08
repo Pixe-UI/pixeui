@@ -36,9 +36,11 @@ export function FooterExport() {
 							</span>
 						</Link>
 
-						<p className={`mt-3 max-w-xs text-xs text-[#fafafa]/70 ${OutfitRegular.className}`}>
-							Modern TailwindCSS components that save time and make your projects look amazing.
-						</p>
+						<div className="mt-6 md:mt-auto">
+							<Link href="https://vercel.com/oss" target="_blank" rel="noopener noreferrer">
+								<Image alt="Vercel OSS Program" src="https://vercel.com/oss/program-badge.svg" width={240} height={240} />
+							</Link>
+						</div>
 					</div>
 
 					{FOOTER_LINKS.map((section) => (

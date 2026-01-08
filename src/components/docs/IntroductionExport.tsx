@@ -15,7 +15,7 @@ const ICON_MAP = {
 
 export default function IntroductionExport() {
 	return (
-		<div className="flex max-w-4xl flex-col py-10">
+		<div className="flex max-w-4xl flex-col pt-2 pb-16">
 			<motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, ease: "easeOut" }}>
 				<div>
 					<h1 className={`mb-6 text-start text-4xl text-[#fafafa] md:text-5xl ${OutfitSemiBold.className}`}>Introduction</h1>
