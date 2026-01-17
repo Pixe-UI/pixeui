@@ -82,7 +82,7 @@ export const FOOTER_LINKS = [
 		title: "Community",
 		links: [
 			{ name: "Discord", href: "https://discord.gg/gNAHhRaCJD", external: true }, // TODO: FINISH & SETUP DISCORD SERVER BEFORE PUBLISHING TO PRODUCTION
-			{ name: "Twitter", href: "#", badge: "Soon" },
+			{ name: "X (Twitter)", href: "https://x.com/pixe_ui", external: true },
 			{ name: "Changelog", href: "#", badge: "Soon" },
 		],
 	},
