@@ -32,7 +32,10 @@ export const COMPONENTS_SIDEBAR_SECTIONS = [
 	{
 		title: "Buttons",
 		icon: "Square",
-		items: [{ name: "Hold Button", href: "/docs/components/buttons/hold-button" }],
+		items: [
+			{ name: "Hold Button", href: "/docs/components/buttons/hold-button" },
+			{ name: "Copy Button", href: "/docs/components/buttons/copy-button" },
+		],
 	},
 ] as const;
 
