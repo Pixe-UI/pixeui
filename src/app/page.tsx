@@ -4,7 +4,7 @@ import { HomeLoader } from "@/components/HomeLoader";
 import { useLoading } from "@/utils/LoadingContext";
 
 import { motion } from "framer-motion";
-import React from "react";
+import * as React from "react";
 
 // TODO: MAKE HOME PAGE DESIGN BEFORE PUBLISHING TO PRODUCTION
 export default function Home() {

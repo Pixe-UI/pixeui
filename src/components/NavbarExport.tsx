@@ -6,9 +6,9 @@ import { NAVBAR_LINKS } from "@/lib/constants";
 
 import { ExternalLink, ArrowRight, Menu, X } from "@deemlol/next-icons";
 import { motion, AnimatePresence } from "framer-motion";
+import * as React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 
 export function NavbarExport() {
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);

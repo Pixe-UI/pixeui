@@ -7,8 +7,8 @@ import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { ArrowRight, Check, Copy } from "@deemlol/next-icons";
 import { motion } from "framer-motion";
+import * as React from "react";
 import Link from "next/link";
-import React from "react";
 
 export default function InstallationExport() {
 	return (

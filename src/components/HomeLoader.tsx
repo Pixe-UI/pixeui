@@ -3,7 +3,7 @@
 import { OutfitSemiBold } from "@/lib/fonts";
 
 import { motion, AnimatePresence } from "framer-motion";
-import React from "react";
+import * as React from "react";
 
 export function HomeLoader({ onLoadingComplete }: { onLoadingComplete: () => void }) {
 	const [isLoading, setIsLoading] = React.useState(true);

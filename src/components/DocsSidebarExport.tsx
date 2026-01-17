@@ -6,8 +6,8 @@ import { OutfitMedium, OutfitRegular, OutfitSemiBold } from "@/lib/fonts";
 import { Grid, Square, Layout, ExternalLink, ChevronRight, ChevronDown, X } from "@deemlol/next-icons";
 import { motion, AnimatePresence } from "framer-motion";
 import { usePathname } from "next/navigation";
+import * as React from "react";
 import Link from "next/link";
-import React from "react";
 
 const ICON_MAP = {
 	Layout: <Layout color="#fafafa" size={16} />,
