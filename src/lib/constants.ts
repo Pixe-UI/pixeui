@@ -35,6 +35,7 @@ export const COMPONENTS_SIDEBAR_SECTIONS = [
 		items: [
 			{ name: "Hold Button", href: "/docs/components/buttons/hold-button" },
 			{ name: "Copy Button", href: "/docs/components/buttons/copy-button" },
+			{ name: "GitHub Stars Button", href: "/docs/components/buttons/github-stars-button" },
 		],
 	},
 ] as const;
