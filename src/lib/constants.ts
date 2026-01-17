@@ -40,24 +40,6 @@ export const COMPONENTS_SIDEBAR_SECTIONS = [
 	},
 ] as const;
 
-export const INTRODUCTION_FEATURES = [
-	{
-		title: "Modern Design",
-		description: "Clean, modern, and professional UI components designed to provide the best user experience.",
-		icon: "Sparkles2",
-	},
-	{
-		title: "Copy & Paste",
-		description: "Simply copy the code and paste it into your project. No complex installation or dependencies required.",
-		icon: "Copy",
-	},
-	{
-		title: "Fully Customizable",
-		description: "Built with Tailwind CSS, making it incredibly easy to fully customize and adapt to your brand identity.",
-		icon: "Code",
-	},
-] as const;
-
 export const COMPONENTS_COLLECTION_LIST = [
 	{
 		title: "Buttons",

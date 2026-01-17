@@ -11,13 +11,12 @@ const LoadingContext = React.createContext<LoadingContextType | undefined>(undef
 
 export function LoadingProvider({ children }: { children: React.ReactNode }) {
 	const [isLoading, setIsLoading] = React.useState(false);
-
 	return <LoadingContext.Provider value={{ isLoading, setIsLoading }}>{children}</LoadingContext.Provider>;
 }
 
 export function useLoading() {
 	const context = React.useContext(LoadingContext);
-	if (context === undefined) throw new Error("useLoading must be used within a LoadingProvider");
 
+	if (context === undefined) throw new Error("useLoading must be used within a LoadingProvider");
 	return context;
 }

@@ -16,8 +16,8 @@ type FooterLink = {
 };
 
 export function FooterExport() {
-	const currentYear = new Date().getFullYear();
 	const { isLoading } = useLoading();
+	const currentYear = 2026;
 
 	if (isLoading) return null;
 

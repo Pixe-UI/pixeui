@@ -1,7 +1,7 @@
 {
 	"private": true,
 	"name": "pixeui",
-	"version": "0.0.6",
+	"version": "0.0.7",
 	"scripts": {
 		"dev": "next dev --turbopack -p 3000",
 		"build": "next build --turbopack",
