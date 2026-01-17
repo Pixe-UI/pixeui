@@ -43,7 +43,7 @@ export function DocsSidebarExport() {
 	const pathname = usePathname();
 
 	return (
-		<aside className="sticky top-36 hidden h-fit max-h-[calc(100vh-10rem)] w-80 flex-col overflow-y-auto py-4 lg:flex">
+		<aside className="sticky top-36 hidden h-fit max-h-[calc(100vh-10rem)] w-80 flex-col overflow-y-auto py-4 2xl:flex">
 			<SidebarContent pathname={pathname} />
 		</aside>
 	);
@@ -72,7 +72,7 @@ export function MobileDocsNav() {
 	const currentPageName = sections.flatMap((s) => s?.items).find((i) => i?.href === pathname)?.name || "Menu";
 
 	return (
-		<div className="mb-6 flex flex-col lg:hidden">
+		<div className="mb-6 flex flex-col 2xl:hidden">
 			<motion.div
 				initial={{ opacity: 0, y: -10 }}
 				animate={{ opacity: 1, y: 0 }}
