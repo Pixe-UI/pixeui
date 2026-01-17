@@ -1,4 +1,4 @@
-import ComponentsExport from "@/components/docs/ComponentsExport";
+import ComponentsExport from "@/components/docs/components/ComponentsExport";
 import { DOMAIN_BASE_URL } from "@/lib/constants";
 import { siteConfig } from "@/lib/siteConfig";
 

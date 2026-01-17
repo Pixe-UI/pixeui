@@ -1,10 +1,10 @@
 "use client";
 
-import { CommandBlock, InstallationStepsExport, Step } from "@/components/docs/InstallationStepsExport";
-import { ApiReference, PropsTable } from "@/components/docs/ApiReferenceExport";
+import { CommandBlock, InstallationStepsExport, Step } from "@/components/docs/components/InstallationStepsExport";
+import { ApiReference, PropsTable } from "@/components/docs/components/ApiReferenceExport";
+import { ComponentPreview } from "@/components/docs/components/ComponentPreview";
 import { OutfitMedium, OutfitRegular, OutfitSemiBold } from "@/lib/fonts";
-import { ComponentPreview } from "@/components/docs/ComponentPreview";
-import { CodeBlock } from "@/components/docs/CodeBlock";
+import { CodeBlock } from "@/components/docs/components/CodeBlock";
 import HoldButton from "@/components/ui/hold-button";
 import { contributors } from "@/lib/contributors";
 import { DOMAIN_BASE_URL } from "@/lib/constants";

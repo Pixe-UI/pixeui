@@ -28,6 +28,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
 			changeFrequency: "weekly",
 			priority: 0.8,
 		},
+		{
+			url: `${DOMAIN_BASE_URL}/docs/components/buttons/hold-button`,
+			lastModified: new Date().toISOString(),
+			changeFrequency: "weekly",
+			priority: 0.8,
+		},
 		// TODO: ADD ALL ROUTES TO SITEMAP BEFORE PUSHING TO PRODUCTION
 	];
 }
