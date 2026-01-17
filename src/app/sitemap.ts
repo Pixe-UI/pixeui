@@ -15,19 +15,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
 			url: `${DOMAIN_BASE_URL}/docs`,
 			lastModified: new Date().toISOString(),
 			changeFrequency: "weekly",
-			priority: 0.8,
+			priority: 0.9,
 		},
 		{
 			url: `${DOMAIN_BASE_URL}/docs/installation`,
 			lastModified: new Date().toISOString(),
 			changeFrequency: "weekly",
-			priority: 0.8,
+			priority: 0.9,
 		},
 		{
 			url: `${DOMAIN_BASE_URL}/docs/components`,
 			lastModified: new Date().toISOString(),
 			changeFrequency: "weekly",
-			priority: 0.8,
+			priority: 0.9,
 		},
 		{
 			url: `${DOMAIN_BASE_URL}/docs/components/buttons/hold-button`,
@@ -37,6 +37,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
 		},
 		{
 			url: `${DOMAIN_BASE_URL}/docs/components/buttons/copy-button`,
+			lastModified: new Date().toISOString(),
+			changeFrequency: "weekly",
+			priority: 0.8,
+		},
+		{
+			url: `${DOMAIN_BASE_URL}/docs/components/buttons/github-stars-button`,
 			lastModified: new Date().toISOString(),
 			changeFrequency: "weekly",
 			priority: 0.8,
