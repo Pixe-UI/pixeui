@@ -24,6 +24,7 @@ Licensed under the [**MIT + Commons Clause License Condition**](./LICENSE.md).
 - Documentation: [**https://www.pixeui.com/docs**](https://www.pixeui.com/docs)
 - Components: [**https://www.pixeui.com/components**](https://www.pixeui.com/components)
 - GitHub: [**https://github.com/Pixe-UI**](https://github.com/Pixe-UI)
+- X (Twitter): [**https://x.com/pixe_ui**](https://x.com/pixe_ui)
 - Discord: [**https://discord.gg/gNAHhRaCJD**](https://discord.gg/gNAHhRaCJD)
 
 <br />
