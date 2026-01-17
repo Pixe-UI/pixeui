@@ -32,7 +32,7 @@ export const COMPONENTS_SIDEBAR_SECTIONS = [
 	{
 		title: "Buttons",
 		icon: "Square",
-		items: [{ name: "Button", href: "/docs/components/buttons/button" }],
+		items: [{ name: "Hold Button", href: "/docs/components/buttons/hold-button" }],
 	},
 ] as const;
 
@@ -57,7 +57,7 @@ export const INTRODUCTION_FEATURES = [
 export const COMPONENTS_COLLECTION_LIST = [
 	{
 		title: "Buttons",
-		href: "/docs/components/buttons/button",
+		href: "/docs/components/buttons/hold-button",
 		disabled: false,
 		icon: "PlusSquare",
 	},
