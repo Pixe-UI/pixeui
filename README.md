@@ -2,7 +2,7 @@
 
 ## BETA VERSION
 
-PixeUI.com is currently in beta stage, we are working hard to release a stable version. We will like to hear your feedback and suggestions.
+PixeUI.com is currently in beta stage, we are working hard to release a stable version. We will like to hear your feedback and suggestions on our [**Discord Server**](https://discord.gg/gNAHhRaCJD).
 
 ## Documentation
 
