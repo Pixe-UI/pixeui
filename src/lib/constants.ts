@@ -47,7 +47,10 @@ export const COMPONENTS_SIDEBAR_SECTIONS = [
 	{
 		title: "Loaders",
 		icon: "Loader",
-		items: [{ name: "Progress", href: "/docs/components/loaders/progress" }],
+		items: [
+			{ name: "Progress", href: "/docs/components/loaders/progress" },
+			{ name: "Circle", href: "/docs/components/loaders/circle" },
+		],
 	},
 ] as const;
 
