@@ -65,11 +65,18 @@ export default function HoldButton({
 	...props
 }: HoldButtonProps) {
 	const [status, setStatus] = React.useState<"idle" | "holding" | "success">("idle");
+	const timeoutRef = React.useRef<ReturnType<typeof setTimeout> | null>(null);
 	const isCancelledRef = React.useRef(false);
 	const controls = useAnimation();
 
 	const currentVariant = buttonVariants[variant] || buttonVariants.gray;
 	const Icon = currentVariant.icon;
+
+	React.useEffect(() => {
+		return () => {
+			if (timeoutRef?.current) clearTimeout(timeoutRef?.current);
+		};
+	}, []);
 
 	async function handleHoldStart() {
 		if (status === "success") return;
@@ -95,7 +102,9 @@ export default function HoldButton({
 		isCancelledRef.current = true;
 
 		if (status === "success") {
-			setTimeout(() => {
+			if (timeoutRef?.current) clearTimeout(timeoutRef?.current);
+
+			timeoutRef.current = setTimeout(() => {
 				setStatus("idle");
 				controls.start({ width: "0%", transition: { duration: 0.3 } });
 			}, 2000);
