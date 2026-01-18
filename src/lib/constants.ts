@@ -44,6 +44,11 @@ export const COMPONENTS_SIDEBAR_SECTIONS = [
 		icon: "Type",
 		items: [{ name: "OTP", href: "/docs/components/inputs/otp" }],
 	},
+	{
+		title: "Loaders",
+		icon: "Loader",
+		items: [{ name: "Progress", href: "/docs/components/loaders/progress" }],
+	},
 ] as const;
 
 export const COMPONENTS_COLLECTION_LIST = [
@@ -60,10 +65,10 @@ export const COMPONENTS_COLLECTION_LIST = [
 		icon: "Type",
 	},
 	{
-		title: "Dialogs",
-		href: "#",
-		disabled: true,
-		icon: "MessageSquare",
+		title: "Loaders",
+		href: "/docs/components/loaders/progress",
+		disabled: false,
+		icon: "Loader",
 	},
 ] as const;
 
