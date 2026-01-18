@@ -72,8 +72,8 @@ function ProgressLoaderDemo() {
 }
 
 export default function ProgressLoaderComponent() {
-	const usageCode = `import * as React from "react"
-import ProgressLoader from "@/components/ui/progress-loader.tsx"
+	const usageCode = `import ProgressLoader from "@/components/ui/progress-loader.tsx"
+import * as React from "react"
 
 export function ProgressLoaderDemo() {
   const [progress, setProgress] = React.useState(13)
