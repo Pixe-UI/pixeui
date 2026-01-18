@@ -36,6 +36,7 @@ export const COMPONENTS_SIDEBAR_SECTIONS = [
 			{ name: "Hold Button", href: "/docs/components/buttons/hold-button" },
 			{ name: "Copy Button", href: "/docs/components/buttons/copy-button" },
 			{ name: "GitHub Stars Button", href: "/docs/components/buttons/github-stars-button" },
+			{ name: "Command Button", href: "/docs/components/buttons/command-button" },
 		],
 	},
 ] as const;
@@ -81,7 +82,7 @@ export const FOOTER_LINKS = [
 	{
 		title: "Community",
 		links: [
-			{ name: "Discord", href: "https://discord.gg/gNAHhRaCJD", external: true }, // TODO: FINISH & SETUP DISCORD SERVER BEFORE PUBLISHING TO PRODUCTION
+			{ name: "Discord", href: "https://discord.gg/gNAHhRaCJD", external: true },
 			{ name: "X (Twitter)", href: "https://x.com/pixe_ui", external: true },
 			{ name: "Changelog", href: "#", badge: "Soon" },
 		],
