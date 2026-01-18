@@ -31,13 +31,18 @@ export const SIDEBAR_SECTIONS = [
 export const COMPONENTS_SIDEBAR_SECTIONS = [
 	{
 		title: "Buttons",
-		icon: "Square",
+		icon: "PlusSquare",
 		items: [
 			{ name: "Hold Button", href: "/docs/components/buttons/hold-button" },
 			{ name: "Copy Button", href: "/docs/components/buttons/copy-button" },
 			{ name: "GitHub Stars Button", href: "/docs/components/buttons/github-stars-button" },
 			{ name: "Command Button", href: "/docs/components/buttons/command-button" },
 		],
+	},
+	{
+		title: "Text Fields",
+		icon: "Type",
+		items: [{ name: "OTP", href: "/docs/components/text-fields/opt" }],
 	},
 ] as const;
 
@@ -49,10 +54,10 @@ export const COMPONENTS_COLLECTION_LIST = [
 		icon: "PlusSquare",
 	},
 	{
-		title: "Inputs",
-		href: "#",
-		disabled: true,
-		icon: "MoreHorizontal",
+		title: "Text Fields",
+		href: "/docs/components/text-fields/opt",
+		disabled: false,
+		icon: "Type",
 	},
 	{
 		title: "Dialogs",

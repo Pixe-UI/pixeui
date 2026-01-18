@@ -3,7 +3,7 @@
 import { SIDEBAR_SECTIONS, COMPONENTS_SIDEBAR_SECTIONS } from "@/lib/constants";
 import { OutfitMedium, OutfitRegular, OutfitSemiBold } from "@/lib/fonts";
 
-import { Grid, Square, Layout, ExternalLink, ChevronRight, ChevronDown, X } from "@deemlol/next-icons";
+import { Grid, PlusSquare, Layout, ExternalLink, ChevronRight, ChevronDown, X, Type } from "@deemlol/next-icons";
 import { motion, AnimatePresence } from "framer-motion";
 import { usePathname } from "next/navigation";
 import * as React from "react";
@@ -12,7 +12,8 @@ import Link from "next/link";
 const ICON_MAP = {
 	Layout: <Layout color="#fafafa" size={16} />,
 	Grid: <Grid color="#fafafa" size={16} />,
-	Square: <Square color="#fafafa" size={16} />,
+	PlusSquare: <PlusSquare color="#fafafa" size={16} />,
+	Type: <Type color="#fafafa" size={16} />,
 };
 
 type SidebarItem = {

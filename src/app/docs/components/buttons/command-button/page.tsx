@@ -5,7 +5,7 @@ import { ApiReference, PropsTable } from "@/components/docs/components/ApiRefere
 import { ComponentPreview } from "@/components/docs/components/ComponentPreview";
 import { OutfitMedium, OutfitRegular, OutfitSemiBold } from "@/lib/fonts";
 import { CodeBlock } from "@/components/docs/components/CodeBlock";
-import CommandButton from "@/components/ui/command-button";
+import CommandButton from "@/components/ui/button/command-button";
 import { contributors } from "@/lib/contributors";
 import { DOMAIN_BASE_URL } from "@/lib/constants";
 
@@ -73,7 +73,7 @@ export default function CommandButtonComponent() {
 	return (
 		<div className="flex w-full flex-col pt-2 pb-16">
 			<div>
-				<h1 className={`mb-3 text-start text-5xl text-[#fafafa] ${OutfitSemiBold.className}`}>Command Button</h1>
+				<h1 className={`mb-3 text-start text-3xl text-[#fafafa] lg:text-5xl ${OutfitSemiBold.className}`}>Command Button</h1>
 
 				<p className={`${OutfitRegular.className} text-start text-sm text-[#fafafa]/60`}>
 					Made by{" "}

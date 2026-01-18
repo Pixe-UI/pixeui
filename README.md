@@ -26,8 +26,3 @@ Licensed under the [**MIT + Commons Clause License Condition**](./LICENSE.md).
 - GitHub: [**https://github.com/Pixe-UI**](https://github.com/Pixe-UI)
 - X (Twitter): [**https://x.com/pixe_ui**](https://x.com/pixe_ui)
 - Discord: [**https://discord.gg/gNAHhRaCJD**](https://discord.gg/gNAHhRaCJD)
-
-<br />
-<a href="https://vercel.com/oss">
-  <img alt="Vercel OSS Program" src="https://vercel.com/oss/program-badge.svg" />
-</a>

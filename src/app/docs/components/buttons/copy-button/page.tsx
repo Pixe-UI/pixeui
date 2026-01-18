@@ -5,7 +5,7 @@ import { ApiReference, PropsTable } from "@/components/docs/components/ApiRefere
 import { ComponentPreview } from "@/components/docs/components/ComponentPreview";
 import { OutfitMedium, OutfitRegular, OutfitSemiBold } from "@/lib/fonts";
 import { CodeBlock } from "@/components/docs/components/CodeBlock";
-import CopyButton from "@/components/ui/copy-button";
+import CopyButton from "@/components/ui/button/copy-button";
 import { contributors } from "@/lib/contributors";
 import { DOMAIN_BASE_URL } from "@/lib/constants";
 

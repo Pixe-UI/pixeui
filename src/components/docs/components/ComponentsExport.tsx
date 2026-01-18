@@ -3,13 +3,13 @@
 import { OutfitMedium, OutfitRegular, OutfitSemiBold } from "@/lib/fonts";
 import { COMPONENTS_COLLECTION_LIST } from "@/lib/constants";
 
-import { MoreHorizontal, MessageSquare, PlusSquare } from "@deemlol/next-icons";
+import { Type, MessageSquare, PlusSquare } from "@deemlol/next-icons";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
 const ICON_MAP = {
 	PlusSquare: <PlusSquare size={24} className="text-[#fafafa]/20" />,
-	MoreHorizontal: <MoreHorizontal size={24} className="text-[#fafafa]/10" />,
+	Type: <Type size={24} className="text-[#fafafa]/10" />,
 	MessageSquare: <MessageSquare size={24} className="text-[#fafafa]/10" />,
 };
 

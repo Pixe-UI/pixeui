@@ -5,6 +5,7 @@ export const OutfitThin = Outfit({
 	style: "normal",
 	subsets: ["latin"],
 	variable: "--font-outfit-thin",
+	preload: false,
 });
 
 export const OutfitExtraLight = Outfit({
@@ -12,6 +13,7 @@ export const OutfitExtraLight = Outfit({
 	style: "normal",
 	subsets: ["latin"],
 	variable: "--font-outfit-extra-light",
+	preload: false,
 });
 
 export const OutfitLight = Outfit({
@@ -19,6 +21,7 @@ export const OutfitLight = Outfit({
 	style: "normal",
 	subsets: ["latin"],
 	variable: "--font-outfit-light",
+	preload: false,
 });
 
 export const OutfitRegular = Outfit({
@@ -26,6 +29,7 @@ export const OutfitRegular = Outfit({
 	style: "normal",
 	subsets: ["latin"],
 	variable: "--font-outfit-regular",
+	preload: false,
 });
 
 export const OutfitMedium = Outfit({
@@ -33,6 +37,7 @@ export const OutfitMedium = Outfit({
 	style: "normal",
 	subsets: ["latin"],
 	variable: "--font-outfit-medium",
+	preload: false,
 });
 
 export const OutfitSemiBold = Outfit({
@@ -40,6 +45,7 @@ export const OutfitSemiBold = Outfit({
 	style: "normal",
 	subsets: ["latin"],
 	variable: "--font-outfit-semi-bold",
+	preload: false,
 });
 
 export const OutfitBold = Outfit({
@@ -47,6 +53,7 @@ export const OutfitBold = Outfit({
 	style: "normal",
 	subsets: ["latin"],
 	variable: "--font-outfit-bold",
+	preload: false,
 });
 
 export const OutfitExtraBold = Outfit({
@@ -54,6 +61,7 @@ export const OutfitExtraBold = Outfit({
 	style: "normal",
 	subsets: ["latin"],
 	variable: "--font-outfit-extra-bold",
+	preload: false,
 });
 
 export const OutfitBlack = Outfit({
@@ -61,4 +69,5 @@ export const OutfitBlack = Outfit({
 	style: "normal",
 	subsets: ["latin"],
 	variable: "--font-outfit-black",
+	preload: false,
 });

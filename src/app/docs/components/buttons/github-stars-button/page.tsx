@@ -3,8 +3,8 @@
 import { CommandBlock, InstallationStepsExport, Step } from "@/components/docs/components/InstallationStepsExport";
 import { ApiReference, PropsTable } from "@/components/docs/components/ApiReferenceExport";
 import { ComponentPreview } from "@/components/docs/components/ComponentPreview";
+import GitHubStarsButton from "@/components/ui/button/github-stars-button";
 import { OutfitMedium, OutfitRegular, OutfitSemiBold } from "@/lib/fonts";
-import GitHubStarsButton from "@/components/ui/github-stars-button";
 import { CodeBlock } from "@/components/docs/components/CodeBlock";
 import { contributors } from "@/lib/contributors";
 import { DOMAIN_BASE_URL } from "@/lib/constants";

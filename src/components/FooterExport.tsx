@@ -27,7 +27,15 @@ export function FooterExport() {
 				<div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
 					<div className="flex flex-col">
 						<Link href="/" className="flex items-center gap-3">
-							<Image src="/PixeUIWhite.svg" alt="PixeUI" width={26} height={26} draggable={false} priority={true} />
+							<Image
+								src="/PixeUIWhite.svg"
+								alt="PixeUI"
+								width={26}
+								height={26}
+								draggable={false}
+								priority={true}
+								preload={false}
+							/>
 
 							<span
 								className={`text-start text-2xl tracking-tight text-[#fafafa] ${OutfitSemiBold.className} tracking-tight`}
@@ -35,12 +43,6 @@ export function FooterExport() {
 								PixeUI
 							</span>
 						</Link>
-
-						<div className="mt-6 md:mt-auto">
-							<Link href="https://vercel.com/oss" target="_blank" rel="noopener noreferrer">
-								<Image alt="Vercel OSS Program" src="https://vercel.com/oss/program-badge.svg" width={240} height={240} />
-							</Link>
-						</div>
 					</div>
 
 					{FOOTER_LINKS.map((section) => (

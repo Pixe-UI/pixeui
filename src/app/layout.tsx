@@ -1,6 +1,7 @@
 import { NavbarExport } from "@/components/NavbarExport";
 import { LoadingProvider } from "@/utils/LoadingContext";
 import { FooterExport } from "@/components/FooterExport";
+import { ConsoleLogger } from "@/utils/ConsoleLogger";
 import { siteConfig } from "@/lib/siteConfig";
 import "@/styles/globals.css";
 
@@ -213,6 +214,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
 				className={`bg-[#0a0a0a] ${OutfitThin.className} ${OutfitExtraLight.className} ${OutfitLight.className} ${OutfitRegular.className} ${OutfitMedium.className} ${OutfitSemiBold.className} ${OutfitBold.className} ${OutfitExtraBold.className} ${OutfitBlack.className} antialiased`}
 			>
 				<LoadingProvider>
+					<ConsoleLogger />
 					<NavbarExport />
 
 					<main>{children}</main>
