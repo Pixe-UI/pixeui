@@ -5,13 +5,13 @@ import { ApiReference, PropsTable } from "@/components/docs/components/ApiRefere
 import { ComponentPreview } from "@/components/docs/components/ComponentPreview";
 import { OutfitMedium, OutfitRegular, OutfitSemiBold } from "@/lib/fonts";
 import { CodeBlock } from "@/components/docs/components/CodeBlock";
-import OptField from "@/components/ui/text-fields/opt/opt-field";
+import OtpInput from "@/components/ui/inputs/otp-input";
 import { contributors } from "@/lib/contributors";
 import { DOMAIN_BASE_URL } from "@/lib/constants";
 
 import Link from "next/link";
 
-const optFieldCode = `/**
+const otpInputCode = `/**
  * @version: 1.0.0
  * @author: Alexandr Virgovič
  * @description: OTP Field
@@ -24,13 +24,13 @@ function cn(...classes: (string | undefined | null | false)[]) {
 	return classes.filter(Boolean).join(" ");
 }
 
-interface OptFieldProps extends Omit<React.HTMLAttributes<HTMLDivElement>, "onChange"> {
+interface OtpInputProps extends Omit<React.HTMLAttributes<HTMLDivElement>, "onChange"> {
 	length?: number;
 	onChange?: (value: string) => void;
 	onComplete?: (value: string) => void;
 }
 
-export default function OptField({ className, length = 6, onComplete, onChange, ...props }: OptFieldProps) {
+export default function OtpInput({ className, length = 6, onComplete, onChange, ...props }: OtpInputProps) {
 	const [otpValues, setOtpValues] = React.useState(() => Array(length).fill(""));
 	const inputsRef = React.useRef<(HTMLInputElement | null)[]>([]);
 
@@ -146,13 +146,13 @@ export default function OptField({ className, length = 6, onComplete, onChange, 
 }
 `;
 
-export default function OptFieldComponent() {
-	const usageCode = `<OptField />`;
+export default function OtpInputComponent() {
+	const usageCode = `<OtpInput />`;
 
 	return (
 		<div className="flex w-full flex-col pt-2 pb-16">
 			<div>
-				<h1 className={`mb-3 text-start text-5xl text-[#fafafa] ${OutfitSemiBold.className}`}>OTP Field</h1>
+				<h1 className={`mb-3 text-start text-5xl text-[#fafafa] ${OutfitSemiBold.className}`}>OTP Input</h1>
 
 				<p className={`${OutfitRegular.className} text-start text-sm text-[#fafafa]/60`}>
 					Made by{" "}
@@ -168,8 +168,8 @@ export default function OptFieldComponent() {
 			</div>
 
 			<section className="flex flex-col pt-10">
-				<ComponentPreview code={optFieldCode} name="components/ui/opt-field.tsx">
-					<OptField length={6} />
+				<ComponentPreview code={otpInputCode} name="components/ui/otp-field.tsx">
+					<OtpInput length={6} />
 				</ComponentPreview>
 
 				<InstallationStepsExport>
@@ -178,19 +178,19 @@ export default function OptFieldComponent() {
 					</Step>
 
 					<Step step={2} title="Copy the code" description="Copy and paste the following code into your project.">
-						<CodeBlock code={optFieldCode} fileName="components/ui/opt-field.tsx" expandable />
+						<CodeBlock code={otpInputCode} fileName="components/ui/otp-field.tsx" expandable />
 					</Step>
 				</InstallationStepsExport>
 
 				<div className="pt-10">
 					<h3 className={`mb-4 text-2xl text-[#fafafa] ${OutfitMedium.className}`}>Usage</h3>
 
-					<CodeBlock code={usageCode} fileName="components/ui/opt-field.tsx" />
+					<CodeBlock code={usageCode} fileName="components/ui/otp-field.tsx" />
 				</div>
 
 				<ApiReference>
 					<PropsTable
-						title="OptField"
+						title="OtpField"
 						props={[
 							{
 								prop: "length?",

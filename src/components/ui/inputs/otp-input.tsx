@@ -11,13 +11,13 @@ function cn(...classes: (string | undefined | null | false)[]) {
 	return classes.filter(Boolean).join(" ");
 }
 
-interface OptFieldProps extends Omit<React.HTMLAttributes<HTMLDivElement>, "onChange"> {
+interface OtpInputProps extends Omit<React.HTMLAttributes<HTMLDivElement>, "onChange"> {
 	length?: number;
 	onChange?: (value: string) => void;
 	onComplete?: (value: string) => void;
 }
 
-export default function OptField({ className, length = 6, onComplete, onChange, ...props }: OptFieldProps) {
+export default function OtpInput({ className, length = 6, onComplete, onChange, ...props }: OtpInputProps) {
 	const [otpValues, setOtpValues] = React.useState(() => Array(length).fill(""));
 	const inputsRef = React.useRef<(HTMLInputElement | null)[]>([]);
 

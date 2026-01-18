@@ -54,7 +54,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 			priority: 0.8,
 		},
 		{
-			url: `${DOMAIN_BASE_URL}/docs/components/text-fields/opt`,
+			url: `${DOMAIN_BASE_URL}/docs/components/inputs/otp`,
 			lastModified: new Date().toISOString(),
 			changeFrequency: "weekly",
 			priority: 0.8,

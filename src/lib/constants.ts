@@ -40,9 +40,9 @@ export const COMPONENTS_SIDEBAR_SECTIONS = [
 		],
 	},
 	{
-		title: "Text Fields",
+		title: "Inputs",
 		icon: "Type",
-		items: [{ name: "OTP", href: "/docs/components/text-fields/opt" }],
+		items: [{ name: "OTP", href: "/docs/components/inputs/otp" }],
 	},
 ] as const;
 
@@ -54,8 +54,8 @@ export const COMPONENTS_COLLECTION_LIST = [
 		icon: "PlusSquare",
 	},
 	{
-		title: "Text Fields",
-		href: "/docs/components/text-fields/opt",
+		title: "Inputs",
+		href: "/docs/components/inputs/otp",
 		disabled: false,
 		icon: "Type",
 	},
