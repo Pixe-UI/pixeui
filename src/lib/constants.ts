@@ -52,6 +52,24 @@ export const COMPONENTS_SIDEBAR_SECTIONS = [
 			{ name: "Circle", href: "/docs/components/loaders/circle" },
 		],
 	},
+	{
+		title: "Skeletons",
+		icon: "Minus",
+		items: [
+			{ name: "Shimmer", href: "/docs/components/skeletons/shimmer" },
+			{ name: "Pulse", href: "/docs/components/skeletons/pulse" },
+			{ name: "Wave", href: "/docs/components/skeletons/wave" },
+		],
+	},
+	{
+		title: "Separators",
+		icon: "Minimize2",
+		items: [
+			{ name: "Dashed", href: "/docs/components/separators/dashed" },
+			{ name: "Gradient", href: "/docs/components/separators/gradient" },
+			{ name: "Shimmer", href: "/docs/components/separators/shimmer" },
+		],
+	},
 ] as const;
 
 export const COMPONENTS_COLLECTION_LIST = [
@@ -72,6 +90,18 @@ export const COMPONENTS_COLLECTION_LIST = [
 		href: "/docs/components/loaders/progress",
 		disabled: false,
 		icon: "Loader",
+	},
+	{
+		title: "Skeletons",
+		href: "/docs/components/skeletons/shimmer",
+		disabled: false,
+		icon: "Minus",
+	},
+	{
+		title: "Separators",
+		href: "/docs/components/separators/dashed",
+		disabled: false,
+		icon: "Minimize2",
 	},
 ] as const;
 

@@ -2,7 +2,6 @@ import { DOMAIN_BASE_URL } from "@/lib/constants";
 
 import { MetadataRoute } from "next";
 
-// TODO: ADD ALL ROUTES TO SITEMAP BEFORE PUSHING TO PRODUCTION
 export default function sitemap(): MetadataRoute.Sitemap {
 	return [
 		{
@@ -67,6 +66,42 @@ export default function sitemap(): MetadataRoute.Sitemap {
 		},
 		{
 			url: `${DOMAIN_BASE_URL}/docs/components/loaders/circle`,
+			lastModified: new Date().toISOString(),
+			changeFrequency: "weekly",
+			priority: 0.8,
+		},
+		{
+			url: `${DOMAIN_BASE_URL}/docs/components/skeletons/shimmer`,
+			lastModified: new Date().toISOString(),
+			changeFrequency: "weekly",
+			priority: 0.8,
+		},
+		{
+			url: `${DOMAIN_BASE_URL}/docs/components/skeletons/pulse`,
+			lastModified: new Date().toISOString(),
+			changeFrequency: "weekly",
+			priority: 0.8,
+		},
+		{
+			url: `${DOMAIN_BASE_URL}/docs/components/skeletons/wave`,
+			lastModified: new Date().toISOString(),
+			changeFrequency: "weekly",
+			priority: 0.8,
+		},
+		{
+			url: `${DOMAIN_BASE_URL}/docs/components/separators/dashed`,
+			lastModified: new Date().toISOString(),
+			changeFrequency: "weekly",
+			priority: 0.8,
+		},
+		{
+			url: `${DOMAIN_BASE_URL}/docs/components/separators/gradient`,
+			lastModified: new Date().toISOString(),
+			changeFrequency: "weekly",
+			priority: 0.8,
+		},
+		{
+			url: `${DOMAIN_BASE_URL}/docs/components/separators/shimmer`,
 			lastModified: new Date().toISOString(),
 			changeFrequency: "weekly",
 			priority: 0.8,

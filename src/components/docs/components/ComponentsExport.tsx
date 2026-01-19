@@ -3,7 +3,7 @@
 import { OutfitMedium, OutfitRegular, OutfitSemiBold } from "@/lib/fonts";
 import { COMPONENTS_COLLECTION_LIST } from "@/lib/constants";
 
-import { Type, Loader, PlusSquare } from "@deemlol/next-icons";
+import { Type, Loader, PlusSquare, Minus, Minimize2 } from "@deemlol/next-icons";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
@@ -11,6 +11,8 @@ const ICON_MAP = {
 	PlusSquare: <PlusSquare size={24} className="text-[#fafafa]/20" />,
 	Type: <Type size={24} className="text-[#fafafa]/10" />,
 	Loader: <Loader size={24} className="text-[#fafafa]/10" />,
+	Minus: <Minus size={24} className="text-[#fafafa]/10" />,
+	Minimize2: <Minimize2 size={24} className="text-[#fafafa]/10" />,
 };
 
 export default function ComponentsExport() {
@@ -23,7 +25,7 @@ export default function ComponentsExport() {
 					Browse our collection of modern, and accessible copy-and-paste components.
 				</p>
 
-				<div className="grid grid-cols-2 gap-x-8 gap-y-8 md:grid-cols-3 lg:grid-cols-4">
+				<div className="grid max-w-4xl grid-cols-2 gap-x-8 gap-y-8 lg:grid-cols-3">
 					{COMPONENTS_COLLECTION_LIST.map((component, index) => {
 						const CardContent = (
 							<>
